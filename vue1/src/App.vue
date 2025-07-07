@@ -23,7 +23,18 @@
         </div>
         <div class="bangdan">
             <div class="bangdan1">
-               
+                <span class="bangdan-lf">Recharge Amount</span>
+                <span class="bangdan-rg">Rewards</span>
+                <div class="bangdan2">
+                    <div class="bangdan-img f1">1</div>
+                    <div class="bangdan-img f2">2</div>
+                    <div class="bangdan-img f2">3</div>
+                    <div class="bangdan-img f2">4</div>
+                    <div class="bangdan-img f2">5</div>
+                </div>
+                <div class="bangdan3">
+                    1
+                </div>
             </div>
         </div>
     </div>
@@ -39,12 +50,12 @@ html,body{
 }
 .head{
     width: 100%;
-    height: 35rem;
+    height: 32.55rem;
     background: url(./assets/img/header.jpg) no-repeat;
     background-size: 100% auto;
 }
 .rules{
-    height: 21.3rem;
+    height: 18rem;
     width: 100%;
     background: url(./assets/img/bg_rewards.jpg) no-repeat;
     background-size: 100% auto;
@@ -109,9 +120,60 @@ html,body{
 }
 .bangdan{
     width: 100%;
-    height: 40rem;
-    background: red;
-   
+    height: 44rem;
+    background: url(./assets/img/border.png) no-repeat;
+    background-size: 100% auto;
+    z-index: auto;
+    position: absolute;
+    
+    .bangdan1{
+        width: 100%;
+        height: 42rem;
+        background: #A30007;
+        position: relative;
+        z-index: -1;
+        margin-top: 1rem;
+        box-sizing: border-box;
+        top: .1rem;
+    }
+    .bangdan-lf{
+        font-size: 1.3rem;
+        color: #B14911;
+        position: absolute;
+        left: 5rem;
+        top: 3rem;
+    }
+    .bangdan-rg{
+        font-size: 1.3rem;
+        color: #B14911;
+        position: absolute;
+        right: 5rem;
+        top: 3rem;
+    }
+    .bangdan2{
+        width: 100%;
+        height: 30rem;
+        position: absolute;
+        left: 7.5%;
+        top: 6rem;
+    }
+    .bangdan-img{
+        width: 85%;
+        height: 5rem;
+        background: blue;
+        
+    }
+    .f2{
+        margin-top: 1.25rem;
+    }
+    .bangdan3{
+        width: 85%;
+        height: 3.5rem;
+        background: pink;
+        position: absolute;
+        left: 7.5%;
+        top: 37rem;
+    }
 }
 
 </style>
