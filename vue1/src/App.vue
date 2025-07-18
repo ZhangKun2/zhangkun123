@@ -1,11 +1,14 @@
 <template>
     <div>
         <div class="head">
-
+            <span class="head-span">07/06-028/06</span>
+            <span class="head-img"><img src="./assets/img/feedbackImg.png" alt=""></span>
         </div>
         <div class="rules">
-            <img src="./assets/img/button_rewards.png" alt="" class="png1">
-            <span class="png2">Rules</span>
+            <div class="png1">
+                <img src="./assets/img/button_rewards.png" alt="" class="png2">
+            </div>
+            <span class="png3">Rules</span>
             <div class="time">
                 <b>10</b>
                 <b class="lf">D</b>
@@ -71,7 +74,6 @@
             <img src="./assets/img/left.png" alt="" class="paihang-img lf">
             <img src="./assets/img/right.png" alt="" class="paihang-img rg">
             <span class="paihang-title">Daily Leaderboard</span>
-            <!-- 定位top统一少16 -->
             <div class="paihang-button">
                 <div class="paihang-button1">
                     <span>Today</span>
@@ -93,8 +95,8 @@
                     </span>
                 </div>
             </div>
-        </div>
-        <div class="baoxiang">
+            
+            <div class="baoxiang">
             <div class="baoxiang1">
                 <img src="./assets/img/picture_rewards_top1.png" alt="">
                 <span>
@@ -109,6 +111,7 @@
                 <img src="./assets/img/beans/beans1.png" alt="">
             </div>
             <span class="baoxiang5">60000</span>
+        </div>
         </div>
         <div class="bottom">
             <div class="finger">
@@ -132,6 +135,7 @@
                     <img class="bot4-img" src="./assets/img/user.png" alt="">
                     <span class="bot6">UeserName</span>
                     <span class="bot7">ID:xxxx</span>
+                    <span class="bot8"><img src="./assets/img/beanIcon.png" alt=""></span>
                     <span class="bot9">988</span>
                     </div>
                     <div class="bot3 to-top">
@@ -139,6 +143,7 @@
                     <img class="bot4-img" src="./assets/img/user.png" alt="">
                     <span class="bot6">UeserName</span>
                     <span class="bot7">ID:xxxx</span>
+                    <span class="bot8"><img src="./assets/img/beanIcon.png" alt=""></span>
                     <span class="bot9">988</span>
                     </div>
                     <div class="bot3 to-top">
@@ -146,6 +151,7 @@
                     <img class="bot4-img" src="./assets/img/user.png" alt="">
                     <span class="bot6">UeserName</span>
                     <span class="bot7">ID:xxxx</span>
+                    <span class="bot8"><img src="./assets/img/beanIcon.png" alt=""></span>
                     <span class="bot9">988</span>
                     </div>
                     <div class="bot3 to-top">
@@ -153,6 +159,7 @@
                     <img class="bot4-img" src="./assets/img/user.png" alt="">
                     <span class="bot6">UeserName</span>
                     <span class="bot7">ID:xxxx</span>
+                    <span class="bot8"><img src="./assets/img/beanIcon.png" alt=""></span>
                     <span class="bot9">988</span>
                     </div>
                     <div class="bot3 to-top">
@@ -160,6 +167,7 @@
                     <img  class="bot4-img" src="./assets/img/user.png" alt="" >
                     <span class="bot6">UeserName</span>
                     <span class="bot7">ID:xxxx</span>
+                    <span class="bot8"><img src="./assets/img/beanIcon.png" alt=""></span>
                     <span class="bot9">988</span>
                     </div>
                 </div>
@@ -193,29 +201,58 @@ html,body{
 }
 .head{
     width: 100%;
-    height: 32.55rem;
+    height: 35rem;
     background: url(./assets/img/header.jpg) no-repeat;
     background-size: 100% auto;
+    position: relative;
+    .head-span{
+        position: absolute;
+        top: 9rem;
+        left: 50%;
+        color: #A30007;
+        transform: translate(-50%);
+        font-size: 1.2rem;
+    }
+    .head-img{
+        width: 3.75rem;
+        height: 3.7rem;
+        position: absolute;
+        left: 32.8rem;
+        top: 23.2rem;
+    }
+    .head-img>img{
+        width: 3.75rem;
+        height: 3.7rem;
+        
+    }
 }
 .rules{
-    height: 18rem;
+    height: 20.1rem;
     width: 100%;
     background: url(./assets/img/bg_rewards.jpg) no-repeat;
     background-size: 100% auto;
     position: relative;
     .png1{
-    width: 4.3rem;
+        width: 4.35rem;
+        height: 4.3rem;
+        position: absolute;
+        left: .5rem;
+        top: -.3rem;
+    }
+    .png2{
+    width: 4.35rem;
     height: 4.3rem;
-    position: absolute;
+    
 
 }
-    .png2{
+    .png3{
     width: 6.5rem;
     height: 3rem;
     background: url(./assets/img/button_rules.png) no-repeat;
     background-size: 100% auto;
     position: absolute;
     right: 0;
+    top: .4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -240,6 +277,7 @@ html,body{
         background: #AA212F;
         border-radius: 25%;
         font-size: 1.3rem;
+        color: #FFF665;
     }
     .lf{
         margin-left: 0.3rem;
@@ -252,6 +290,7 @@ html,body{
         height: 0.5rem;
         font-size: 1.3rem;
         text-align: center;
+        color: #FFF665;
     }
     .wenzi{
         position: absolute;
@@ -259,6 +298,7 @@ html,body{
         left: 5rem;
         right: 10.5rem;
         font-size: 1.2rem;
+        color: #B14911;
     }
 }
 .bangdan{
@@ -268,7 +308,6 @@ html,body{
     background-size: 100% auto;
     z-index: auto;
     position: relative;
-    
     .bangdan1{
         width: 100%;
         height: 47.3rem;
@@ -309,12 +348,12 @@ html,body{
     }
     .bangdan3{
         width:33rem;
-        height: 5.5rem;
+        height: 5rem;
         background: url(./assets/img/button.png) no-repeat;
         background-size: 100% auto;
         position: absolute;
         left: 2.3rem;
-        bottom: 2.9rem;
+        bottom: 4rem;
     }
     .bangdan3>span{
         font-size: 2.4rem;
@@ -374,10 +413,9 @@ html,body{
 }
 .paihang{
     width: 100%;
-    height: 27.7rem;
+    height: 34rem;
     background: url(./assets/img/background_leaderboard.jpg) no-repeat;
     background-size: 100% auto;
-    margin-top: 1rem;
     box-sizing:border-box ;
     position: relative;
     .paihang-img{
@@ -385,22 +423,29 @@ html,body{
         height: 1.3rem;
         background-size:100%  auto ;
     }
+    .lf{
+        position: absolute;
+        left: 2.8rem;
+        top: 2rem;
+    }
     .rg{
         position: absolute;
-        right: 0;
+        right: 3.5rem;
+        top: 2rem;
     }
     .paihang-title{
         position: absolute;
         font-size: 1.4rem;
         color: #FFF200;
         left: 12.3rem;
+        top: 1.6rem;
     }
     .paihang-button{
         width: 17.6rem;
         height: 2.6rem;
         position: absolute;
         left: 9.3rem;
-        top: 3.3rem;
+        top: 4.9rem;
         border-radius:1rem;
         background: rgba(55, 0, 0, 0.3);
         font-size: 1.4rem;
@@ -440,7 +485,7 @@ html,body{
         height: 7.5rem;
         position: absolute;
         left: 4.2rem;
-        top: 3rem;
+        top: 5.2rem;
     }
     .paihang-touxiang2{
         width: 15.88rem;
@@ -448,7 +493,7 @@ html,body{
         background: url(./assets/img/frame_top1.png) no-repeat;
         background-size: 100% auto;
         position: absolute;
-        top: 6.7rem;
+        top: 9rem;
         left: 10.8rem;
     }
     .paihang-touxiang4{
@@ -495,12 +540,13 @@ html,body{
         left: 2.8rem;
         top: -.3rem;
     }
-}
-.baoxiang{
+    .baoxiang{
     width: 100%;
     height: 6.2rem;
-    background: linear-gradient(to right, rgba(251, 124, 0, ) 0%, rgba(253, 217, 60, ) 50%, rgba(251, 124, 0, ) 100%);
-    position: relative;
+    background: linear-gradient(90deg, rgba(160, 100, 85, 0) -40%, #ffaa07 66%, rgba(49, 10, 3, 0));
+    position: absolute;
+    bottom: 0;
+    }
     .baoxiang1{
         height: 3.5rem;
         width: 3.6rem;
@@ -572,7 +618,45 @@ html,body{
         text-align: center;
         border-radius: 1rem;
 }
+    .countdown{
+        width: 10.6rem;
+        height: 4rem;
+
+        position: absolute;
+        left: 27.4rem;
+        top: 8.6rem;
+    }
+    .countdown1{
+        width: 5.7rem;
+        height: 1.7rem;
+        position: absolute;
+        left: 3.4rem;
+        top: .3rem;
+        font-size: 1.1rem;
+    }
+    .countdown2{
+        width: 1.205rem;
+        height: 1.1rem;
+        position: absolute;
+        top: 2.3rem;
+        left: 3.5rem;
+    }
+    .countdown2>img{
+        width: 1.205rem;
+        height: 1.1rem;
+        
+    }
+    .countdown3{
+        width: 4.6rem;
+        height: 1.7rem;
+        color: #FFDE00;
+        font-size: 1.1rem;
+        position: absolute;
+        top: 2rem;
+        left: 5.2rem;
+    }
 }
+
 .bottom{
     height: 45.9rem;
     width: 100%;
@@ -710,12 +794,12 @@ html,body{
         color: #FFEF66;
     }
     .foot4{
-        width: 20.6rem;
-        height: .1rem;
-        border: .1rem solid #ffffff;
-        opacity: .4;
+        width: 65%;
+        height: .102557em;
+        background: #fff;
+        opacity: .35;
         position: absolute;
-        left: 8.5rem;
+        left: 17.5%;
         top: 3.5rem;
     }
     .foot5{
